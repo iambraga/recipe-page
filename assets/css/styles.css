@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Young+Serif&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	/*Primary Colors*/
+	--NUTMEG: hsl(14, 45%, 36%);
+	--DARK-RASPBERRY: hsl(332, 51%, 32%);
+
+	/* Neutral */
+	--WHITE: hsl(0, 0%, 100%);
+	--ROSE-WHITE: hsl(330, 100%, 98%);
+	--EGGSHELL: hsl(30, 54%, 90%);
+	--LIGHT-GREY: hsl(30, 18%, 87%);
+	--WENGE-BROWN: hsl(30, 10%, 34%);
+	--DARK-CHARCOAL: hsl(24, 5%, 18%);
+}
+
+body {
+	background: var(--EGGSHELL);
+	color: #000;
+	font-family: "Outfit", sans-serif;
+}
+
+img {
+	width: 100%;
+	height: auto;
+	display: block;
+	border-radius: 10px;
+}
+
+ul,
+ol {
+	padding-left: 1.5rem;
+}
+
+li {
+	margin-bottom: 0.8rem;
+	padding-left: 1rem;
+}
+
+main {
+	max-width: 700px;
+	margin: 7rem auto;
+	background: var(--WHITE);
+	color: var(--WENGE-BROWN);
+	border-radius: 20px;
+}
+
+section {
+	padding: 1.8rem 3rem;
+}
+
+section:first-child {
+	padding-top: 3rem;
+}
+
+h1 {
+	font-family: "Young Serif", serif;
+	font-size: 2.5rem;
+	margin: 1.5rem 0;
+}
+h2 {
+	font-size: 2rem;
+	font-family: "Young Serif", serif;
+	margin-bottom: 1rem;
+	color: var(--NUTMEG);
+}
+
+strong {
+	color: var(--DARK-CHARCOAL);
+}
+
+table strong {
+	color: var(--NUTMEG);
+}
+
+table {
+	width: 100%;
+	margin-top: 1rem;
+	border-collapse: collapse;
+}
+
+td {
+	padding: 9px;
+	padding-left: 20px;
+	border-block: 1px solid var(--LIGHT-GREY);
+}
+tr:first-child td {
+	border-top: none;
+}
+tr:last-child td {
+	border-bottom: none;
+}
+
+.prep {
+	padding-left: 4rem;
+}
+
+.prep h2 {
+	font-size: 1.5rem;
+	font-family: "Outfit", sans-serif;
+	color: var(--DARK-RASPBERRY);
+}
+
+@media (max-width: 800px) {
+	main {
+		margin-block: 0;
+	}
+
+	section:first-child {
+		padding-top: 0;
+	}
+
+	.hero {
+		padding: 0;
+	}
+
+	.hero img {
+		border-top-left-radius: 0;
+		border-top-right-radius: 0;
+	}
+
+	.desc {
+		padding: 0 3rem 2rem;
+	}
+
+	table {
+		margin-inline: 0;
+	}
+}
